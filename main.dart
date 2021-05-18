@@ -47,17 +47,19 @@ void main() {
     MathQuestion quastion2 = MathQuestion("100-55", 45.0);
     MathQuestion quastion3 = MathQuestion("20*25", 500.0);*/
 
-  //print(questions[0].questionText);
+   //print(questions[0].questionText);
 
   for(MathQuestion mathQuestion in questions){
+
   int userAnswer = promptNumber(mathQuestion.questionText);
   if (userAnswer == mathQuestion.answerNum){
   print ("Correct!");
   score++;
-  }else{
+  }
+    else{
     print("Incorrect, the right answer is ${mathQuestion.answerNum}!");}
 
-  //print (mathQuestion.answerNum);
+   //print (mathQuestion.answerNum);
 
   }
   print (
